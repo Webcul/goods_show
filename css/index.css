@@ -1,0 +1,91 @@
+body,ul,li,ol,h1,h2,h3,h4,h5,h6,form,img,p{margin: 0;padding: 0;list-style: none;text-decoration: none;border: 0;}
+body{font-family: "微软雅黑","arial, helvetica, sans-serif";font-size: 14px;}
+a{color: #999;text-decoration: none;}
+a:hover{color: #fff;}
+input,textarea{outline: none;}/*去掉chrome聚焦后边框*/
+@font-face {font-family:"freshskin";src: url('../fonts/iconfont.ttf');}
+.videobox{width: 100%;height: 680px;overflow: hidden;position: relative;}
+.videobox video{width: 100%;min-width: 1280px;position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);}
+.videobox header{width: 100%;height: 40px;background-color: #333;z-index: 999;position: absolute;}
+.videobox header .con{width:80%;height:100%;margin: 0 auto;}
+.videobox header .con .left{width: 75px;height: 20px;background: url(../images/logo.png) 0 0 no-repeat;float: left;margin-top: 10px;cursor: pointer;}
+.videobox header .con .right{float: right;line-height: 40px;font-family: "freshskin";}
+.videobox header .con .right a{margin-right: 10px;}
+.videobox nav{width: 100%;height: 90px;background-color: rgba(0,0,0,0.2);z-index: 1000;position: absolute;top: 40px;border-bottom: 1px solid #fff;}
+.videobox nav ul{width: 80%;height: 90px;position: relative;margin: 0 auto;}
+.videobox nav ul li{float: left;margin-right: 19%;}
+.videobox nav ul .left:hover aside{display: block;}
+.videobox nav ul .left a{display:block;height: 90px;line-height: 90px;color: #fff;font-size: 20px;}
+.videobox nav ul .left a img{vertical-align: middle;}
+.videobox nav ul .left a span{margin: 0 10px;}
+.videobox aside{width: 380px;height: 560px;background:rgba(0,0,0,0.3);position: absolute;top: 90px;left: 0;z-index: 1500;color: #fff;display:none ;}
+.videobox aside span{width: 20px;height: 14px;background: url(../images/liebiao.png) 0 0 no-repeat;position: absolute;left: 50px;top:0px;}
+.videobox aside ol{width: 145px;float: left;}
+.videobox aside ol li{width: 145px;height: 25px;line-height: 25px;cursor: pointer;font-family: "宋体";}
+.videobox aside ol .cons{font-size: 16px;font-family: "微软雅黑";text-indent: 0;padding: 10 0;}
+.videobox aside ol li :hover{color: #fff;}
+.videobox aside .zuo{margin: 35px 0 0 68px;}
+.videobox aside .you{margin-top:35px;}
+.videobox aside img{margin: 10px 0px 0px 13px;}
+.videobox nav ul .center{margin-top: 30px;}
+.videobox nav ul .center input{width: 240px;height: 30px;border-radius: 15px;border: 1px solid #fff;padding-left: 30px;color: #fff;background: rgba(0,0,0,0);box-sizing: border-box;background: url(../images/search.png) no-repeat 3px 3px;}
+.videobox nav ul .right{margin-top: 32px;width: 280px;height: 32px;line-height: 32px;margin-right: 0;text-align: center;font-size: 16px;font-family: "freshskin";}
+.videobox nav ul .right a{display: inline-block;width: 32px;height: 32px;color: #fff;margin-left: 30px;border-radius: 16px;box-shadow: 0 0 0 1px #fff inset;-webkit-transition: box-shadow 0.3s ease 0s;}
+.videobox nav ul .right a:hover{box-shadow: 0 0 0 16px #fff inset;color: #C1DCC5;}                                                /*实现块元素百分比下居中*/
+.videobox .pic{width: 570px;height: 210px;position: absolute;top: 50%;left: 50%;background: url(../images/wenzi.png) no-repeat;transform: translate(-50%,-50%);text-align: center;}
+.videobox .pic p{margin-top: 240px;color:#4c8174;}
+.videobox .pic ul{position: absolute;color: #999;}
+.videobox .pic ul li{width: 180px;height: 56px;border-radius: 28px;background: #fff;text-align: left;}
+.videobox .pic ul .one{line-height: 56px;position: absolute;top: 40px;left: -1920px;opacity: 0;transition: all 1s ease 0s;}
+.videobox .pic ul .two{line-height: 56px;position: absolute;top: 40px;left: 1920px;opacity: 0;transition: all 1s ease 0s;}
+body:hover .videobox .pic ul .one{position: absolute;top: 40px;left: 100px;opacity: 0.8;}
+body:hover .videobox .pic ul .two{position: absolute;top: 40px;left: 300px;opacity: 0.8;}
+.videobox .pic ul .one span,.videobox .pic ul .two span{float: left;width: 40px;height: 40px;text-align: center;line-height: 40px;border-radius: 20px;margin:8px 10px 0 10px;font-family: "freshskin";font-weight: bold;color:#90c197;box-shadow: 0 0 0 1px #90c197 inset;transition: box-shadow 0.2s ease-in 0s;}
+.videobox .pic ul .two span{margin: 8px 30px 0 10px;}
+.videobox .pic ul .one:hover span,.videobox .pic ul .two:hover span{box-shadow: 0 0 0 30px #90c197 inset;color: #fff;}
+.new{width: 100%;height: 530px;background: #fff;}
+.new header{width:385px ;height: 95px;border-radius: 48px;background: #f7f7f7;margin: 70px auto 0;box-sizing: border-box;padding: 2px 0 0 35px;}
+.new p{color: #db0067;text-align: center;margin-top: 10px;}
+.new ul{margin: 70px auto;width: 75%;margin-left: 240px;}
+.new ul li{float: left; width: 266px;height: 250px;border: 1px solid #ccc;background: url(../images/pic1.jpg) 0 0 no-repeat;margin-right: 8%;margin-bottom: 40px;position: relative;overflow: hidden;}
+.new ul li:nth-child(2){background: url(../images/pic2.jpg) 0 0 no-repeat;}
+.new ul li:nth-child(3){background: url(../images/pic3.jpg) 0 0 no-repeat;margin-right: 0;}
+.new ul li hgroup{width: 266px;height: 250px;position:absolute;left: 0;top: -250px;background: rgba(0,0,0,0.5);transition: all 0.3s ease-in 0s;}
+.new ul li:hover hgroup{position: absolute;top: 0;left: 0;}
+.new ul li hgroup h2:nth-child(1){font-size: 22px;font-weight: normal;color: #fff;margin-top: 58px;text-align: center;}
+.new ul li hgroup h2:nth-child(2){font-size: 14px;font-weight: normal;color: #fff;margin-top: 15px;text-align: center;}
+.new ul li hgroup h2:nth-child(3){width: 26px;height: 26px;background: url(../images/jiantou.png) 0 0 no-repeat;margin-left: 120px;margin-top: 15px;}
+.new ul li hgroup h2:nth-child(4){width: 75px;height: 22px;background: url(../images/anniu.png) 0 0 no-repeat;margin-left: 95px;margin-top: 25px;}
+.try{width: 100%;height: 312px;background: #83ba8b;padding-top: 70px;}
+.try header{width: 555px;height: 95px;margin: 0 auto;border-radius: 48px;background: #f7f7f7;padding: 5px 0 0 40px;box-sizing: border-box;}
+.try p{text-align: center;margin-top: 15px;color: #fff;}
+.try ul{width: 960px;margin: 70px auto 0;}                                                                /*设置从何处查看一个元素的角度*/
+.try ul li{width: 291px;height: 251px;margin-right: 4%;float: left;position: relative;margin-bottom: 40px;-webkit-perspective:230px;}
+.try ul li:last-child{margin-right: 0;}        /*backface-visibility 属性定义当元素不面向屏幕时是否可见。如果在旋转元素不希望看到其背面时，该属性很有用*/
+.try ul li img{position: absolute;top: 0;left: 0;-webkit-backface-visibility: hidden;transition: all 0.5s ease-in 0s;}
+.try ul li .fan{-webkit-transform: rotateX(-180deg);}
+.try ul li:hover .fan{-webkit-transform: rotateX(0deg);}
+.try ul li:hover .zheng{-webkit-transform: rotateX(180deg);}
+.test{width: 100%;height: 700px;background: #fff;}
+.test header{width: 508px;height: 95px;background: #f7f7f7;border-radius: 48px;margin: 220px auto 0;padding: 5px 0 0 35px;box-sizing: border-box;}
+.test p{text-align: center;color:#db0067;margin-top: 10px;}
+.test ul{width: 960px;margin: 70px auto 0;}
+.test ul li{width: 195px;height: 195px;border-radius: 50%;border: 1px solid #ccc;margin-right: 5%;float: left;position: relative;margin-bottom: 40px;}
+.test ul li img{position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);}
+.test ul li:nth-child(4),.test ul li:nth-child(8){margin-right: 0;}
+.test ul li .tihuan{opacity: 0;transition: all 0.4s ease-in 0.1s;}
+.test ul li:hover .tihuan{opacity: 1;transform: translate(-50%,-50%) scale(0.75);}
+.test ul li:hover .tu{opacity: 0;transform: translate(-50%,-50%) scale(0.5);}
+.test ul li .tu{transition: all 0.4s ease-in 0s;}
+footer{width: 100%;height: 400px;background: #545861;border-bottom: 1px solid #fff;}
+footer .logo{width: 80%;height:100px;margin: 0 auto;border-bottom: 1px solid #8c9299;background: url(../images/logo1.jpg) center center no-repeat;}
+footer .message{width: 80%;margin: 20px auto 0;color:#fffada;}
+footer .message .left{width: 525px;float: left;padding-left: 30px;box-sizing: border-box;}
+footer .message .left li {margin-right: 30px;float: left;}
+footer .message .left li input{width: 215px;height: 32px;border-radius: 5px;border: none;margin: 10px 0px 15px 0;box-sizing: border-box;padding-left: 15px;}
+footer .message .left li:last-child input{width: 120px;height: 39px;padding: 0;background: url(../images/but.jpg) 0 0 no-repeat;cursor: pointer;}
+footer .message .right{float: left;}
+footer .message .right p{margin-bottom: 10px;}
+footer .message .right textarea{width: 500px;height: 172px;box-sizing: border-box;resize: none;padding: 10px;}
+.banquan{width: 100%;height: 60px;background: #333;text-align: center;}
+.banquan a{line-height: 60px;}
